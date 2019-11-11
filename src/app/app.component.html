@@ -1,0 +1,30 @@
+<app-list (show)="fn($event)"></app-list>
+<app-user [list]="data"></app-user>
+<hr>
+<div class="container text-center">
+    <h2>Task-2</h2><br>
+    <input type="radio" name="gender" value="Male" [(ngModel)]="user" > Male<br>
+    <input type="radio" name="gender" value="Female" [(ngModel)]="user" > Female<br>
+    <h3> You have selected: {{user}}</h3>
+</div>
+<hr>
+<div class="container text-center">
+    <h2>Task-3</h2><br>
+    <select name="cars"  [(ngModel)]="user1">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+     
+      <h3> You have selected: {{user1}}</h3>
+</div>
+<hr>    
+<div class="container text-center">
+    <h2>Task-4</h2><br>
+    <label class="btn btn-outline-secondary" 
+    *ngFor="let test of tests"  >
+     <input type="checkbox" [(ngModel)]="test.selected" > {{test.name}} - {{test.selected}}
+   </label>
+   
+</div>    

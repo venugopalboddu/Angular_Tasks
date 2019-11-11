@@ -1,0 +1,21 @@
+<div class="container text-center">
+        
+        <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Present</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of list">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.city}}</td>
+            <td>{{s.present}}</td>
+          </tr>    
+        </tbody>
+</table> 
+<div>
